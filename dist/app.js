@@ -9,7 +9,6 @@ node_fetch_1.default('http://www.umlive.net/api.aspx?method=catalog.container&co
     .then(function (res) { return res.json(); })
     .then(function (res) { return res['Response']; })
     .then(function (res) {
-    console.log(res);
     var containerId = res['containerID'];
     var prevContainerId = res['prevContainerID'];
     var nextContainerId = res['nextContainerID'];

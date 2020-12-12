@@ -25,8 +25,6 @@ fetch('http://www.umlive.net/api.aspx?method=catalog.container&containerID=25483
     .then(res => res.json())
     .then(res => res['Response'])
     .then(res => {
-        console.log(res);
-
         const containerId = res['containerID'];
         const prevContainerId = res['prevContainerID'];
         const nextContainerId = res['nextContainerID'];
